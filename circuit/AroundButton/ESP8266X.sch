@@ -248,11 +248,9 @@ Text HLabel 5200 3850 2    50   Input ~ 0
 BUTT_SIG
 Text HLabel 5200 3150 2    50   Output ~ 0
 CHRG_LED
-Text HLabel 3200 3650 0    50   Output ~ 0
-~PWR_SAVE
 Text HLabel 3200 3450 0    50   Input ~ 0
 CHRG_SIG
-Text HLabel 5200 3250 2    50   Output ~ 0
+Text HLabel 3200 3650 0    50   Output ~ 0
 GPIO2_BATT_FB_EN
 Wire Wire Line
 	8950 1600 8850 1600
@@ -428,21 +426,6 @@ F 7 "12k 1% 0.1W SMD 0402" H 2800 2750 50  0001 C CNN "Description"
 	0    1    1    0   
 $EndComp
 $Comp
-L Resistor:ERJ-2RKF1202X R19
-U 1 1 5D87C8E1
-P 6450 3650
-F 0 "R19" V 6550 3650 50  0000 C CNN
-F 1 "ERJ-2RKF1202X" H 6450 3150 50  0001 C CNN
-F 2 "fp-lib:RES0402_ERJ-xR" H 6450 4100 50  0001 C CNN
-F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 6450 4000 50  0001 C CNN
-F 4 "12k" V 6450 3650 40  0000 C CNN "Friendly Name"
-F 5 "Vishay" H 6450 3050 50  0001 C CNN "Manufactor"
-F 6 "ERJ-2RKF1202X" H 6450 4200 50  0001 C CNN "Part Number"
-F 7 "12k 1% 0.1W SMD 0402" H 6450 3250 50  0001 C CNN "Description"
-	1    6450 3650
-	0    -1   1    0   
-$EndComp
-$Comp
 L Resistor:ERJ-2RKF1202X R18
 U 1 1 5D87CDE9
 P 6150 3550
@@ -517,16 +500,7 @@ F 7 "12k 1% 0.1W SMD 0402" H 1800 2600 50  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 3650 3400 3650
-Wire Wire Line
 	5200 3150 5000 3150
-Wire Wire Line
-	5200 3250 5050 3250
-Wire Wire Line
-	5050 3250 5050 3650
-Connection ~ 5050 3650
-Wire Wire Line
-	5050 3650 5000 3650
 Wire Wire Line
 	2350 3750 3400 3750
 Text HLabel 2200 4450 0    50   Input ~ 0
@@ -562,16 +536,12 @@ Connection ~ 5150 3550
 Wire Wire Line
 	5150 3550 6000 3550
 Wire Wire Line
-	5050 3650 6300 3650
-Wire Wire Line
 	6300 3550 6700 3550
-Wire Wire Line
-	6700 3550 6700 3650
-Wire Wire Line
-	6600 3650 6700 3650
-Connection ~ 6700 3650
-Wire Wire Line
-	6700 3650 6700 3750
 Text HLabel 6700 3750 3    50   Input ~ 0
 3.3V
+Wire Wire Line
+	6700 3550 6700 3750
+Wire Wire Line
+	3200 3650 3400 3650
+NoConn ~ 5000 3650
 $EndSCHEMATC

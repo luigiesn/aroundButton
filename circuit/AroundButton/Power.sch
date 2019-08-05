@@ -271,8 +271,6 @@ Wire Wire Line
 Connection ~ 9600 3650
 Text Label 7450 3650 2    50   ~ 0
 V_BATT
-Text HLabel 7450 3950 0    50   Input ~ 0
-~PWR_SAVE
 Wire Wire Line
 	7450 3950 7600 3950
 $Comp
@@ -447,60 +445,13 @@ Wire Wire Line
 	3900 5700 3500 5700
 Text HLabel 2100 4000 0    50   Input ~ 0
 BUTT_INPUT
-$Comp
-L Transistor:IRLML2402TRPBF Q1
-U 1 1 5D5A3921
-P 2700 4000
-F 0 "Q1" H 2790 4096 50  0000 L CNN
-F 1 "IRLML2402TRPBF" H 2700 4650 50  0001 C CNN
-F 2 "fp-lib:SOT23-3_IRLML2402TRPBF" H 2700 4550 50  0001 C CNN
-F 3 "libraries\\datasheet\\IRF_IRLML2402PBF.pdf" H 2700 4450 50  0001 L CNN
-F 4 "IRLML2402TR" H 2790 4005 50  0000 L CNN "Friendly Name"
-F 5 "International Rectifier\\Infineon" H 2700 3550 60  0001 C CNN "Manufactor"
-F 6 "IRLML2402TRPBF" H 2700 3450 60  0001 C CNN "Part Number"
-F 7 "MOSFET N-Channel 20V 250mOhm 1.2A SMD SOT-23" H 2700 3350 50  0001 C CNN "Description"
-	1    2700 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Resistor:ERJ-2RKF1002X R6
-U 1 1 5D5AE85B
-P 2700 3400
-F 0 "R6" H 2770 3438 50  0000 L CNN
-F 1 "ERJ-2RKF1002X" H 2700 2900 50  0001 C CNN
-F 2 "fp-lib:RES0402_ERJ-xR" H 2700 3850 50  0001 C CNN
-F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 2700 3750 50  0001 C CNN
-F 4 "10k" H 2770 3354 40  0000 L CNN "Friendly Name"
-F 5 "Vishay" H 2700 2800 50  0001 C CNN "Manufactor"
-F 6 "ERJ-2RKF1002X" H 2700 3950 50  0001 C CNN "Part Number"
-F 7 "10k 1% 0.1W SMD 0402" H 2700 3000 50  0001 C CNN "Description"
-	1    2700 3400
-	1    0    0    -1  
-$EndComp
-Text HLabel 2500 3150 0    50   Output ~ 0
-3.3V
-Wire Wire Line
-	2500 3150 2700 3150
-Wire Wire Line
-	2700 3150 2700 3250
-Wire Wire Line
-	2700 3550 2700 3650
 Wire Wire Line
 	2250 4100 2250 4000
 Wire Wire Line
 	2250 4000 2400 4000
-Text HLabel 2950 3650 2    50   Output ~ 0
-BUTT_SIG
-Wire Wire Line
-	2950 3650 2700 3650
-Connection ~ 2700 3650
-Wire Wire Line
-	2700 3650 2700 3750
 Connection ~ 2250 4000
 Wire Wire Line
 	7450 4650 7450 4750
-Wire Wire Line
-	2700 4500 2700 4150
 Text HLabel 2800 4500 2    50   Input ~ 0
 GND
 Wire Wire Line
@@ -764,7 +715,7 @@ Wire Wire Line
 	7050 3700 7050 3750
 Connection ~ 7050 3750
 Wire Wire Line
-	7050 3750 7600 3750
+	7050 3750 7450 3750
 $Comp
 L Flag:PWR_FLAG #FLG0104
 U 1 1 5DACE107
@@ -789,4 +740,56 @@ Wire Wire Line
 	3950 6250 3900 6250
 Wire Wire Line
 	3900 6100 3900 6250
+Wire Wire Line
+	7450 3950 7450 3750
+Connection ~ 7450 3750
+Wire Wire Line
+	7450 3750 7600 3750
+Wire Wire Line
+	2700 4500 2700 4150
+$Comp
+L Transistor:IRLML2402TRPBF Q1
+U 1 1 5D5A3921
+P 2700 4000
+F 0 "Q1" H 2790 4096 50  0000 L CNN
+F 1 "IRLML2402TRPBF" H 2700 4650 50  0001 C CNN
+F 2 "fp-lib:SOT23-3_IRLML2402TRPBF" H 2700 4550 50  0001 C CNN
+F 3 "libraries\\datasheet\\IRF_IRLML2402PBF.pdf" H 2700 4450 50  0001 L CNN
+F 4 "IRLML2402TR" H 2790 4005 50  0000 L CNN "Friendly Name"
+F 5 "International Rectifier\\Infineon" H 2700 3550 60  0001 C CNN "Manufactor"
+F 6 "IRLML2402TRPBF" H 2700 3450 60  0001 C CNN "Part Number"
+F 7 "MOSFET N-Channel 20V 250mOhm 1.2A SMD SOT-23" H 2700 3350 50  0001 C CNN "Description"
+	1    2700 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 3650 2700 3750
+Connection ~ 2700 3650
+Wire Wire Line
+	2950 3650 2700 3650
+Text HLabel 2950 3650 2    50   Output ~ 0
+BUTT_SIG
+Wire Wire Line
+	2700 3550 2700 3650
+Wire Wire Line
+	2700 3150 2700 3250
+Wire Wire Line
+	2500 3150 2700 3150
+Text HLabel 2500 3150 0    50   Output ~ 0
+3.3V
+$Comp
+L Resistor:ERJ-2RKF1002X R6
+U 1 1 5D5AE85B
+P 2700 3400
+F 0 "R6" H 2770 3438 50  0000 L CNN
+F 1 "ERJ-2RKF1002X" H 2700 2900 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 2700 3850 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 2700 3750 50  0001 C CNN
+F 4 "10k" H 2770 3354 40  0000 L CNN "Friendly Name"
+F 5 "Vishay" H 2700 2800 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF1002X" H 2700 3950 50  0001 C CNN "Part Number"
+F 7 "10k 1% 0.1W SMD 0402" H 2700 3000 50  0001 C CNN "Description"
+	1    2700 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
