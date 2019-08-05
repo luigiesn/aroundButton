@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ESP8266EX
+D WiFi SoC 160MHz 32-bit QFN-32
+F libraries\datasheet\ESP8266EX\Espressif_ESP8266EX.pdf
+$ENDCMP
+#
+#End Doc Library

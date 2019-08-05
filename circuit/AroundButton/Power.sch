@@ -1,0 +1,792 @@
+EESchema Schematic File Version 4
+LIBS:AroundButton-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title "a-round button"
+Date "2019-07-21"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BatteryCharger:BQ21040DBV U1
+U 1 1 5D45354F
+P 3700 1600
+F 0 "U1" H 4050 1100 60  0000 C CNN
+F 1 "BQ21040DBV" H 3750 1650 60  0001 C CNN
+F 2 "fp-lib:SOT23-6_BQ21040DBV" H 3700 1750 60  0001 C CNN
+F 3 "libraries\\datasheet\\TexasInstruments_BQ21040.pdf" H 3700 1750 60  0001 C CNN
+F 4 "BQ21040DBV" H 3550 1100 50  0000 C CNN "Friendly Name"
+F 5 "Texas Instruments" H 3700 900 60  0001 C CNN "Manufactor"
+F 6 "BQ21040DBVR|BQ21040DBVT" H 3700 800 60  0001 C CNN "Part Number"
+F 7 "Single-Input 0.8-A Li-Ion Single Cell Battery Charger SMD SOT-23-6" H 3700 700 50  0001 C CNN "Description"
+	1    3700 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1950 3100 1950
+Wire Wire Line
+	2050 1800 2050 1700
+Wire Wire Line
+	2050 1700 3100 1700
+Wire Wire Line
+	1950 2200 2050 2200
+Wire Wire Line
+	2050 2200 2050 2100
+Wire Wire Line
+	1950 1700 2050 1700
+Connection ~ 2050 1700
+$Comp
+L Resistor:ERJ-2RKF1002X R4
+U 1 1 5D4562F4
+P 4700 2100
+F 0 "R4" H 4770 2138 50  0000 L CNN
+F 1 "ERJ-2RKF1002X" H 4700 1600 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 4700 2550 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 4700 2450 50  0001 C CNN
+F 4 "10k" H 4770 2054 40  0000 L CNN "Friendly Name"
+F 5 "Vishay" H 4700 1500 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF1002X" H 4700 2650 50  0001 C CNN "Part Number"
+F 7 "10k 1% 0.1W SMD 0402" H 4700 1700 50  0001 C CNN "Description"
+	1    4700 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1950 4700 1800
+Wire Wire Line
+	4700 1800 4300 1800
+$Comp
+L Resistor:ERJ-2RKF1002X R3
+U 1 1 5D45784B
+P 2600 2100
+F 0 "R3" H 2670 2138 50  0000 L CNN
+F 1 "ERJ-2RKF1002X" H 2600 1600 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 2600 2550 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 2600 2450 50  0001 C CNN
+F 4 "10k" H 2670 2054 40  0000 L CNN "Friendly Name"
+F 5 "Vishay" H 2600 1500 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF1002X" H 2600 2650 50  0001 C CNN "Part Number"
+F 7 "10k 1% 0.1W SMD 0402" H 2600 1700 50  0001 C CNN "Description"
+	1    2600 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1950 2600 1800
+Wire Wire Line
+	2600 1800 3100 1800
+Wire Wire Line
+	2600 2350 2600 2250
+Wire Wire Line
+	4700 2350 4700 2250
+Wire Wire Line
+	4450 2500 4450 2350
+Wire Wire Line
+	4450 1950 4300 1950
+$Comp
+L Capacitor:GRM188R60J106KE47D C2
+U 1 1 5D45B438
+P 5300 1950
+F 0 "C2" H 5415 1996 50  0000 L CNN
+F 1 "GRM188R60J106KE47D" H 5300 2400 50  0001 C CNN
+F 2 "fp-lib:CAP0603_GRM188" H 5300 1950 50  0001 C CNN
+F 3 "libraries\\datasheet\\Murata_GRM_Series.pdf" H 5300 1950 50  0001 C CNN
+F 4 "10uF" H 5415 1905 50  0000 L CNN "Friendly Name"
+F 5 "Murata Electronics" H 5300 1500 50  0001 C CNN "Manufactor"
+F 6 "GRM188R60J106KE47D" H 5300 1400 50  0001 C CNN "Part Number"
+F 7 "10uF 6.3V 10% X5R SMD 0603" H 5300 1300 50  0001 C CNN "Description"
+	1    5300 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2200 5300 2200
+Wire Wire Line
+	5300 2200 5300 2100
+Wire Wire Line
+	4300 1700 4700 1700
+Wire Wire Line
+	5300 1700 5300 1800
+Connection ~ 4700 1700
+Wire Wire Line
+	4700 1700 5300 1700
+Text Notes 3250 1400 0    50   ~ 0
+50mA charging current
+Wire Wire Line
+	4750 1500 4700 1500
+Wire Wire Line
+	4700 1500 4700 1700
+Wire Wire Line
+	5450 1700 5300 1700
+Connection ~ 5300 1700
+$Comp
+L Inductor:MAKK2520H1R5M L1
+U 1 1 5D4B87FB
+P 8200 3200
+F 0 "L1" H 8200 3401 50  0000 C CNN
+F 1 "MAKK2520H1R5M" H 8200 3450 50  0001 C CNN
+F 2 "fp-lib:IND_2x2.5_MAKK2520H" H 8225 3375 50  0001 C CNN
+F 3 "libraries\\datasheet\\TayioYuden_MA-H_Series.pdf" H 8200 3100 50  0001 C CNN
+F 4 "1.5uH" H 8200 3317 40  0000 C CNN "Friendly Name"
+F 5 "Tayio Yuden" H 8200 3000 60  0001 C CNN "Manufactor"
+F 6 "MAKK2520H1R5M" H 8200 2900 60  0001 C CNN "Part Number"
+F 7 "1.5uH 78mOhms 20% 2.4A Metal Core Wire-Wound Chip Power Inductor SMD 2.5x2mm" H 8200 2800 50  0001 C CNN "Description"
+	1    8200 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3200 7500 3200
+Wire Wire Line
+	7500 3200 7500 3450
+Wire Wire Line
+	7500 3450 7600 3450
+Wire Wire Line
+	8500 3200 8900 3200
+Wire Wire Line
+	8900 3200 8900 3450
+Wire Wire Line
+	8900 3450 8800 3450
+Wire Wire Line
+	7450 3650 7600 3650
+Wire Wire Line
+	8950 4450 8900 4450
+$Comp
+L Resistor:ERJ-2RKF1203X R11
+U 1 1 5D4C3A89
+P 9600 4250
+F 0 "R11" H 9670 4288 50  0000 L CNN
+F 1 "ERJ-2RKF1203X" H 9600 3750 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 9600 4700 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 9600 4600 50  0001 C CNN
+F 4 "120k" H 9670 4204 40  0000 L CNN "Friendly Name"
+F 5 "Vishay" H 9600 3650 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF1203X" H 9600 4800 50  0001 C CNN "Part Number"
+F 7 "120k 1% 0.1W SMD 0402" H 9600 3850 50  0001 C CNN "Description"
+	1    9600 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3650 9600 3650
+Wire Wire Line
+	9600 3650 9600 3700
+$Comp
+L Resistor:ERJ-2RKF7503X R8
+U 1 1 5D4C63CA
+P 9600 3850
+F 0 "R8" H 9670 3888 50  0000 L CNN
+F 1 "ERJ-2RKF7503X" H 9600 3350 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 9600 4300 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 9600 4200 50  0001 C CNN
+F 4 "750k" H 9670 3804 40  0000 L CNN "Friendly Name"
+F 5 "Vishay" H 9600 3250 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF7503X" H 9600 4400 50  0001 C CNN "Part Number"
+F 7 "750k 1% 0.1W SMD 0402" H 9600 3450 50  0001 C CNN "Description"
+	1    9600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor:GJM1555C1H3R0BB01D C6
+U 1 1 5D4C8A0B
+P 9250 4250
+F 0 "C6" H 9365 4296 50  0000 L CNN
+F 1 "GJM1555C1H3R0BB01D" H 9250 4700 50  0001 C CNN
+F 2 "fp-lib:CAP0402_GJM155" H 9250 4250 50  0001 C CNN
+F 3 "libraries\\datasheet\\Murata_GJM_Series.pdf" H 9250 4250 50  0001 C CNN
+F 4 "3pF" H 9365 4205 50  0000 L CNN "Friendly Name"
+F 5 "Murata Electronics" H 9250 3800 50  0001 C CNN "Manufactor"
+F 6 "GJM1555C1H3R0BB01D" H 9250 3700 50  0001 C CNN "Part Number"
+F 7 "3pF 50V +/-0.1pF C0G SMD 0402" H 9250 3600 50  0001 C CNN "Description"
+	1    9250 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 4100 9600 4050
+Wire Wire Line
+	9250 4100 9250 4050
+Wire Wire Line
+	9250 4050 9600 4050
+Connection ~ 9600 4050
+Wire Wire Line
+	9600 4050 9600 4000
+Wire Wire Line
+	9700 4450 9600 4450
+Wire Wire Line
+	9600 4450 9600 4400
+Wire Wire Line
+	9250 4400 9250 4450
+Wire Wire Line
+	9250 4450 9600 4450
+Connection ~ 9600 4450
+Wire Wire Line
+	8800 4050 9250 4050
+Connection ~ 9250 4050
+Wire Wire Line
+	8800 4250 8900 4250
+Wire Wire Line
+	8900 4250 8900 4350
+Connection ~ 8900 4450
+Wire Wire Line
+	8900 4450 8800 4450
+Wire Wire Line
+	8800 4350 8900 4350
+Connection ~ 8900 4350
+Wire Wire Line
+	8900 4350 8900 4450
+Text HLabel 1950 2200 0    50   Input ~ 0
+GND
+Text HLabel 1950 1700 0    50   Input ~ 0
+CHRGR_IN
+Text HLabel 2600 2350 3    50   Input ~ 0
+GND
+Text HLabel 3000 1950 0    50   Input ~ 0
+GND
+Text HLabel 4750 1500 2    50   Input ~ 0
+V_BATT
+Text HLabel 4450 2500 3    50   Output ~ 0
+CHRG_SIG
+Text HLabel 4700 2350 3    50   Input ~ 0
+GND
+Text HLabel 5200 2200 0    50   Input ~ 0
+GND
+Text Label 5450 1700 0    50   ~ 0
+V_BATT
+Text HLabel 3600 6800 2    50   Input ~ 0
+GND
+Text HLabel 4000 5700 2    50   Output ~ 0
+BATT_FB
+Text HLabel 9450 1750 2    50   Output ~ 0
+3.3V
+Text HLabel 8950 4450 2    50   Input ~ 0
+GND
+Text HLabel 9700 4450 2    50   Input ~ 0
+GND
+Text Label 10250 3650 0    50   ~ 0
+3.6V
+Wire Wire Line
+	10250 3650 10150 3650
+Connection ~ 9600 3650
+Text Label 7450 3650 2    50   ~ 0
+V_BATT
+Text HLabel 7450 3950 0    50   Input ~ 0
+~PWR_SAVE
+Wire Wire Line
+	7450 3950 7600 3950
+$Comp
+L Capacitor:GRM188R60J226MEA0D C5
+U 1 1 5D4FA46B
+P 10150 3850
+F 0 "C5" H 10265 3896 50  0000 L CNN
+F 1 "GRM188R60J226MEA0D" H 10150 4300 50  0001 C CNN
+F 2 "fp-lib:CAP0603_GRM188" H 10050 4250 50  0001 C CNN
+F 3 "libraries\\datasheet\\Murata_GRM_Series.pdf" H 10150 3850 50  0001 C CNN
+F 4 "22uF" H 10265 3805 50  0000 L CNN "Friendly Name"
+F 5 "Murata Electronics" H 10150 3400 50  0001 C CNN "Manufactor"
+F 6 "GRM188R60J226MEA0D" H 10150 3300 50  0001 C CNN "Part Number"
+F 7 "22uF 6.3V 10% X5R SMD 0603" H 10150 3200 50  0001 C CNN "Description"
+	1    10150 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 3700 10150 3650
+Connection ~ 10150 3650
+Wire Wire Line
+	10150 3650 9600 3650
+Text HLabel 10250 4050 2    50   Input ~ 0
+GND
+Wire Wire Line
+	10250 4050 10150 4050
+Wire Wire Line
+	10150 4050 10150 4000
+$Comp
+L VoltageRegulator:TPS63000DRCR U3
+U 1 1 5D4B7732
+P 8200 3350
+F 0 "U3" H 8550 2100 60  0000 C CNN
+F 1 "TPS63000DRCR" H 8200 3550 60  0001 C CNN
+F 2 "fp-lib:VSON10_TPS63000DRCR" H 8200 3450 60  0001 C CNN
+F 3 "libraries\\datasheet\\TexasInstruments_TPS6300x.pdf" H 8200 3500 60  0001 C CNN
+F 4 "Texas Instruments" H 8200 2000 60  0001 C CNN "Manufactor"
+F 5 "TPS63000DRCR" H 8200 1900 60  0001 C CNN "Part Number"
+F 6 "TPS63000" H 7950 2100 50  0000 C CNN "Friendly Name"
+F 7 "Buck-boost Converter 1.8A Switches High-Efficiency SMD VSON-10" H 8200 1800 50  0001 C CNN "Description"
+	1    8200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VoltageRegulator:TLV73333PQDRVRQ1 U2
+U 1 1 5D50FCCB
+P 8200 1650
+F 0 "U2" H 8200 1821 60  0000 C CNN
+F 1 "TLV73333PQDRVRQ1" H 8200 1850 60  0001 C CNN
+F 2 "fp-lib:WSON6_TLV73333PQDRVRQ1" H 8200 1750 60  0001 C CNN
+F 3 "libraries\\datasheet\\TexasInstruments_TLV733P-Q1.pdf" H 8200 1800 60  0001 C CNN
+F 4 "Texas Instruments" H 8150 1050 60  0001 C CNN "Manufactor"
+F 5 "TLV73333PQDRVRQ1" H 8150 950 60  0001 C CNN "Part Number"
+F 6 "TLV733P-Q1" H 8200 1723 50  0000 C CNN "Friendly Name"
+F 7 "3.3V 300mA LDO Capacitor-Free SMD WSON-6" H 8150 850 50  0001 C CNN "Description"
+	1    8200 1650
+	1    0    0    -1  
+$EndComp
+Text HLabel 8950 1950 2    50   Input ~ 0
+GND
+Wire Wire Line
+	8950 1950 8900 1950
+$Comp
+L Capacitor:GRM188R60J226MEA0D C3
+U 1 1 5D519624
+P 9350 1950
+F 0 "C3" H 9465 1996 50  0000 L CNN
+F 1 "GRM188R60J226MEA0D" H 9350 2400 50  0001 C CNN
+F 2 "fp-lib:CAP0603_GRM188" H 9250 2350 50  0001 C CNN
+F 3 "libraries\\datasheet\\Murata_GRM_Series.pdf" H 9350 1950 50  0001 C CNN
+F 4 "22uF" H 9465 1905 50  0000 L CNN "Friendly Name"
+F 5 "Murata Electronics" H 9350 1500 50  0001 C CNN "Manufactor"
+F 6 "GRM188R60J226MEA0D" H 9350 1400 50  0001 C CNN "Part Number"
+F 7 "22uF 6.3V 10% X5R SMD 0603" H 9350 1300 50  0001 C CNN "Description"
+	1    9350 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 1750 9150 1750
+Wire Wire Line
+	9350 1750 9350 1800
+Wire Wire Line
+	9450 1750 9350 1750
+Connection ~ 9350 1750
+Text HLabel 9450 2150 2    50   Input ~ 0
+GND
+Wire Wire Line
+	9450 2150 9350 2150
+Wire Wire Line
+	9350 2150 9350 2100
+Text Label 7200 1750 2    50   ~ 0
+3.6V
+Wire Wire Line
+	7200 1750 7500 1750
+Wire Wire Line
+	7600 1950 7500 1950
+Wire Wire Line
+	7500 1950 7500 1750
+Connection ~ 7500 1750
+Wire Wire Line
+	7500 1750 7600 1750
+Wire Wire Line
+	8800 1850 8900 1850
+Wire Wire Line
+	8900 1850 8900 1950
+Connection ~ 8900 1950
+Wire Wire Line
+	8900 1950 8800 1950
+$Comp
+L Transistor:IRLML2402TRPBF Q2
+U 1 1 5D533654
+P 3500 6550
+F 0 "Q2" H 3590 6646 50  0000 L CNN
+F 1 "IRLML2402TRPBF" H 3500 7200 50  0001 C CNN
+F 2 "fp-lib:SOT23-3_IRLML2402TRPBF" H 3500 7100 50  0001 C CNN
+F 3 "libraries\\datasheet\\IRF_IRLML2402PBF.pdf" H 3500 7000 50  0001 L CNN
+F 4 "IRLML2402TR" H 3590 6555 50  0000 L CNN "Friendly Name"
+F 5 "International Rectifier\\Infineon" H 3500 6100 60  0001 C CNN "Manufactor"
+F 6 "IRLML2402TRPBF" H 3500 6000 60  0001 C CNN "Part Number"
+F 7 "MOSFET N-Channel 20V 250mOhm 1.2A SMD SOT-23" H 3500 5900 50  0001 C CNN "Description"
+	1    3500 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6800 3500 6800
+Wire Wire Line
+	3500 6800 3500 6700
+Wire Wire Line
+	3400 5700 3500 5700
+Wire Wire Line
+	3500 5700 3500 5800
+Text Label 3000 5700 2    50   ~ 0
+V_BATT
+Wire Wire Line
+	3000 5700 3100 5700
+Wire Wire Line
+	4000 5700 3900 5700
+Connection ~ 3500 5700
+Text HLabel 2950 6550 0    50   Input ~ 0
+BATT_FB_EN
+Wire Wire Line
+	2950 6550 3050 6550
+Wire Wire Line
+	3400 6800 3500 6800
+Connection ~ 3500 6800
+Wire Wire Line
+	3100 6800 3050 6800
+Wire Wire Line
+	3050 6800 3050 6550
+Connection ~ 3050 6550
+Wire Wire Line
+	3050 6550 3200 6550
+$Comp
+L Capacitor:GCM155R71E104KE02D C8
+U 1 1 5D55F18F
+P 3900 5950
+F 0 "C8" H 4015 5996 50  0000 L CNN
+F 1 "GCM155R71E104KE02D" H 3900 6400 50  0001 C CNN
+F 2 "fp-lib:CAP0402_GCM155" H 3900 5950 50  0001 C CNN
+F 3 "libraries\\datasheet\\Murata_GCM_Series.pdf" H 3900 5950 50  0001 C CNN
+F 4 "100nF" H 4015 5905 50  0000 L CNN "Friendly Name"
+F 5 "Murata Electronics" H 3900 5500 50  0001 C CNN "Manufactor"
+F 6 "GCM155R71E104KE02D" H 3900 5400 50  0001 C CNN "Part Number"
+F 7 "100nF 25V 10% X7R SMD 0402" H 3900 5300 50  0001 C CNN "Description"
+	1    3900 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5800 3900 5700
+Connection ~ 3900 5700
+Wire Wire Line
+	3900 5700 3500 5700
+Text HLabel 2100 4000 0    50   Input ~ 0
+BUTT_INPUT
+$Comp
+L Transistor:IRLML2402TRPBF Q1
+U 1 1 5D5A3921
+P 2700 4000
+F 0 "Q1" H 2790 4096 50  0000 L CNN
+F 1 "IRLML2402TRPBF" H 2700 4650 50  0001 C CNN
+F 2 "fp-lib:SOT23-3_IRLML2402TRPBF" H 2700 4550 50  0001 C CNN
+F 3 "libraries\\datasheet\\IRF_IRLML2402PBF.pdf" H 2700 4450 50  0001 L CNN
+F 4 "IRLML2402TR" H 2790 4005 50  0000 L CNN "Friendly Name"
+F 5 "International Rectifier\\Infineon" H 2700 3550 60  0001 C CNN "Manufactor"
+F 6 "IRLML2402TRPBF" H 2700 3450 60  0001 C CNN "Part Number"
+F 7 "MOSFET N-Channel 20V 250mOhm 1.2A SMD SOT-23" H 2700 3350 50  0001 C CNN "Description"
+	1    2700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor:ERJ-2RKF1002X R6
+U 1 1 5D5AE85B
+P 2700 3400
+F 0 "R6" H 2770 3438 50  0000 L CNN
+F 1 "ERJ-2RKF1002X" H 2700 2900 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 2700 3850 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 2700 3750 50  0001 C CNN
+F 4 "10k" H 2770 3354 40  0000 L CNN "Friendly Name"
+F 5 "Vishay" H 2700 2800 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF1002X" H 2700 3950 50  0001 C CNN "Part Number"
+F 7 "10k 1% 0.1W SMD 0402" H 2700 3000 50  0001 C CNN "Description"
+	1    2700 3400
+	1    0    0    -1  
+$EndComp
+Text HLabel 2500 3150 0    50   Output ~ 0
+3.3V
+Wire Wire Line
+	2500 3150 2700 3150
+Wire Wire Line
+	2700 3150 2700 3250
+Wire Wire Line
+	2700 3550 2700 3650
+Wire Wire Line
+	2250 4100 2250 4000
+Wire Wire Line
+	2250 4000 2400 4000
+Text HLabel 2950 3650 2    50   Output ~ 0
+BUTT_SIG
+Wire Wire Line
+	2950 3650 2700 3650
+Connection ~ 2700 3650
+Wire Wire Line
+	2700 3650 2700 3750
+Connection ~ 2250 4000
+Wire Wire Line
+	7450 4650 7450 4750
+Wire Wire Line
+	2700 4500 2700 4150
+Text HLabel 2800 4500 2    50   Input ~ 0
+GND
+Wire Wire Line
+	2800 4500 2700 4500
+$Comp
+L Capacitor:GRM188R60J106KE47D C1
+U 1 1 5D4540E1
+P 2050 1950
+F 0 "C1" H 2165 1996 50  0000 L CNN
+F 1 "GRM188R60J106KE47D" H 2050 2400 50  0001 C CNN
+F 2 "fp-lib:CAP0603_GRM188" H 2050 1950 50  0001 C CNN
+F 3 "libraries\\datasheet\\Murata_GRM_Series.pdf" H 2050 1950 50  0001 C CNN
+F 4 "10uF" H 2165 1905 50  0000 L CNN "Friendly Name"
+F 5 "Murata Electronics" H 2050 1500 50  0001 C CNN "Manufactor"
+F 6 "GRM188R60J106KE47D" H 2050 1400 50  0001 C CNN "Part Number"
+F 7 "10uF 6.3V 10% X5R SMD 0603" H 2050 1300 50  0001 C CNN "Description"
+	1    2050 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4650 7000 4750
+Wire Wire Line
+	7000 4750 7450 4750
+$Comp
+L Capacitor:GCM155R71E104KE02D C7
+U 1 1 5D61F079
+P 7000 4500
+F 0 "C7" H 7115 4546 50  0000 L CNN
+F 1 "GCM155R71E104KE02D" H 7000 4950 50  0001 C CNN
+F 2 "fp-lib:CAP0402_GCM155" H 7000 4500 50  0001 C CNN
+F 3 "libraries\\datasheet\\Murata_GCM_Series.pdf" H 7000 4500 50  0001 C CNN
+F 4 "100nF" H 7115 4455 50  0000 L CNN "Friendly Name"
+F 5 "Murata Electronics" H 7000 4050 50  0001 C CNN "Manufactor"
+F 6 "GCM155R71E104KE02D" H 7000 3950 50  0001 C CNN "Part Number"
+F 7 "100nF 25V 10% X7R SMD 0402" H 7000 3850 50  0001 C CNN "Description"
+	1    7000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor:ERJ-2RKF7503X R12
+U 1 1 5D620B10
+P 7450 4500
+F 0 "R12" H 7520 4538 50  0000 L CNN
+F 1 "ERJ-2RKF7503X" H 7450 4000 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 7450 4950 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 7450 4850 50  0001 C CNN
+F 4 "750k" H 7520 4454 40  0000 L CNN "Friendly Name"
+F 5 "Vishay" H 7450 3900 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF7503X" H 7450 5050 50  0001 C CNN "Part Number"
+F 7 "750k 1% 0.1W SMD 0402" H 7450 4100 50  0001 C CNN "Description"
+	1    7450 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor:ERJ-2RKF1203X R9
+U 1 1 5D62B85E
+P 2250 4250
+F 0 "R9" H 2320 4288 50  0000 L CNN
+F 1 "ERJ-2RKF1203X" H 2250 3750 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 2250 4700 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 2250 4600 50  0001 C CNN
+F 4 "120k" H 2320 4204 40  0000 L CNN "Friendly Name"
+F 5 "Vishay" H 2250 3650 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF1203X" H 2250 4800 50  0001 C CNN "Part Number"
+F 7 "120k 1% 0.1W SMD 0402" H 2250 3850 50  0001 C CNN "Description"
+	1    2250 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4400 2250 4500
+Wire Wire Line
+	2250 4500 2700 4500
+Connection ~ 2700 4500
+Wire Wire Line
+	2100 4000 2250 4000
+$Comp
+L Diode:BAT54CLT1G D2
+U 1 1 5D64006C
+P 6100 4250
+F 0 "D2" H 6050 4473 50  0000 C CNN
+F 1 "BAT54CLT1G" H 6100 4700 50  0001 C CNN
+F 2 "fp-lib:SOT23-3_BAT54CLT1G" H 6100 4600 50  0001 C CNN
+F 3 "libraries\\datasheet\\OnSemiconductor_BAT54CL.pdf" H 6100 4300 50  0001 C CNN
+F 4 "ON Semiconductor" H 6100 3950 60  0001 C CNN "Manufactor"
+F 5 "BAT54CLT1G" H 6100 3850 60  0001 C CNN "Part Number"
+F 6 "BAT54CL" H 6050 4564 50  0000 C CNN "Friendly Name"
+F 7 "Dual Common Cathode Schottky 30V 200mA SMD SOT-23-3" H 6100 3750 50  0001 C CNN "Description"
+	1    6100 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 3750 6150 3750
+Text Label 6050 3750 2    50   ~ 0
+V_BATT
+Wire Wire Line
+	6550 3200 6550 3300
+Wire Wire Line
+	6650 3200 6550 3200
+Text HLabel 6650 3200 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6550 3750 7050 3750
+Connection ~ 6550 3750
+Wire Wire Line
+	6550 3600 6550 3750
+Wire Wire Line
+	6450 3750 6550 3750
+$Comp
+L Resistor:ERJ-2RKF1000X R7
+U 1 1 5D4F2962
+P 6300 3750
+F 0 "R7" V 6109 3750 50  0000 C CNN
+F 1 "ERJ-2RKF1000X" H 6300 3200 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 6300 4200 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 6300 4100 50  0001 C CNN
+F 4 "100R" V 6193 3750 40  0000 C CNN "Friendly Name"
+F 5 "Panasonic" H 6300 3100 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF1000X" H 6300 4200 50  0001 C CNN "Part Number"
+F 7 "100R 1% 0.1W SMD 0402" H 6300 3300 50  0001 C CNN "Description"
+	1    6300 3750
+	0    1    -1   0   
+$EndComp
+$Comp
+L Capacitor:GCM155R71E104KE02D C4
+U 1 1 5D4F11B4
+P 6550 3450
+F 0 "C4" H 6665 3496 50  0000 L CNN
+F 1 "GCM155R71E104KE02D" H 6550 3900 50  0001 C CNN
+F 2 "fp-lib:CAP0402_GCM155" H 6550 3450 50  0001 C CNN
+F 3 "libraries\\datasheet\\Murata_GCM_Series.pdf" H 6550 3450 50  0001 C CNN
+F 4 "100nF" H 6665 3405 50  0000 L CNN "Friendly Name"
+F 5 "Murata Electronics" H 6550 3000 50  0001 C CNN "Manufactor"
+F 6 "GCM155R71E104KE02D" H 6550 2900 50  0001 C CNN "Part Number"
+F 7 "100nF 25V 10% X7R SMD 0402" H 6550 2800 50  0001 C CNN "Description"
+	1    6550 3450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7450 4350 7450 4250
+Connection ~ 7450 4250
+Wire Wire Line
+	7450 4250 7600 4250
+Wire Wire Line
+	7000 4350 7000 4250
+Wire Wire Line
+	7000 4250 7450 4250
+Text HLabel 6850 4750 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6850 4750 7000 4750
+Connection ~ 7000 4750
+Text HLabel 5750 4150 0    50   Input ~ 0
+BUTT_INPUT
+Wire Wire Line
+	5750 4150 5900 4150
+Text HLabel 5750 4350 0    50   Input ~ 0
+PWR_HOLD
+Wire Wire Line
+	5750 4350 5900 4350
+$Comp
+L Resistor:ERJ-2RKF1000X R10
+U 1 1 5D6FBF45
+P 6700 4250
+F 0 "R10" V 6509 4250 50  0000 C CNN
+F 1 "ERJ-2RKF1000X" H 6700 3700 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 6700 4700 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 6700 4600 50  0001 C CNN
+F 4 "100R" V 6593 4250 40  0000 C CNN "Friendly Name"
+F 5 "Panasonic" H 6700 3600 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF1000X" H 6700 4700 50  0001 C CNN "Part Number"
+F 7 "100R 1% 0.1W SMD 0402" H 6700 3800 50  0001 C CNN "Description"
+	1    6700 4250
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6850 4250 7000 4250
+Connection ~ 7000 4250
+Wire Wire Line
+	6550 4250 6400 4250
+$Comp
+L Resistor:ERJ-2RKF1002X R5
+U 1 1 5D755337
+P 4150 2350
+F 0 "R5" V 4265 2350 50  0000 C CNN
+F 1 "ERJ-2RKF1002X" H 4150 1850 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 4150 2800 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 4150 2700 50  0001 C CNN
+F 4 "10k" V 4349 2350 40  0000 C CNN "Friendly Name"
+F 5 "Vishay" H 4150 1750 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF1002X" H 4150 2900 50  0001 C CNN "Part Number"
+F 7 "10k 1% 0.1W SMD 0402" H 4150 1950 50  0001 C CNN "Description"
+	1    4150 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 2350 4450 2350
+Connection ~ 4450 2350
+Wire Wire Line
+	4450 2350 4450 1950
+Text HLabel 3900 2350 0    50   Output ~ 0
+3.3V
+Wire Wire Line
+	3900 2350 4000 2350
+$Comp
+L Resistor:ERJ-2RKF1002X R14
+U 1 1 5D7D4C4C
+P 3500 5950
+F 0 "R14" H 3570 5988 50  0000 L CNN
+F 1 "ERJ-2RKF1002X" H 3500 5450 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 3500 6400 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 3500 6300 50  0001 C CNN
+F 4 "10k" H 3570 5904 40  0000 L CNN "Friendly Name"
+F 5 "Vishay" H 3500 5350 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF1002X" H 3500 6500 50  0001 C CNN "Part Number"
+F 7 "10k 1% 0.1W SMD 0402" H 3500 5550 50  0001 C CNN "Description"
+	1    3500 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistor:ERJ-2RKF3242X R13
+U 1 1 5D7E10F4
+P 3250 5700
+F 0 "R13" V 3059 5700 50  0000 C CNN
+F 1 "ERJ-2RKF3242X" H 3250 5200 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 3250 6150 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 3250 6050 50  0001 C CNN
+F 4 "32.4k" V 3143 5700 40  0000 C CNN "Friendly Name"
+F 5 "Vishay" H 3250 5100 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF3242X" H 3250 6250 50  0001 C CNN "Part Number"
+F 7 "32.4k 1% 0.1W SMD 0402" H 3250 5300 50  0001 C CNN "Description"
+	1    3250 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Resistor:ERJ-2RKF1203X R15
+U 1 1 5DA558A6
+P 3250 6800
+F 0 "R15" V 3365 6800 50  0000 C CNN
+F 1 "ERJ-2RKF1203X" H 3250 6300 50  0001 C CNN
+F 2 "fp-lib:RES0402_ERJ-xR" H 3250 7250 50  0001 C CNN
+F 3 "libraries\\datasheet\\ERJ-xR.pdf" H 3250 7150 50  0001 C CNN
+F 4 "120k" V 3449 6800 40  0000 C CNN "Friendly Name"
+F 5 "Vishay" H 3250 6200 50  0001 C CNN "Manufactor"
+F 6 "ERJ-2RKF1203X" H 3250 7350 50  0001 C CNN "Part Number"
+F 7 "120k 1% 0.1W SMD 0402" H 3250 6400 50  0001 C CNN "Description"
+	1    3250 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Flag:PWR_FLAG #FLG0103
+U 1 1 5DABD1C7
+P 7050 3700
+F 0 "#FLG0103" H 7050 3800 50  0001 C CNN
+F 1 "PWR_FLAG" H 7050 3873 50  0000 C CNN
+F 2 "" H 7050 3700 50  0001 C CNN
+F 3 "~" H 7050 3700 50  0001 C CNN
+	1    7050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3700 7050 3750
+Connection ~ 7050 3750
+Wire Wire Line
+	7050 3750 7600 3750
+$Comp
+L Flag:PWR_FLAG #FLG0104
+U 1 1 5DACE107
+P 9150 1700
+F 0 "#FLG0104" H 9150 1800 50  0001 C CNN
+F 1 "PWR_FLAG" H 9150 1873 50  0000 C CNN
+F 2 "" H 9150 1700 50  0001 C CNN
+F 3 "~" H 9150 1700 50  0001 C CNN
+	1    9150 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1700 9150 1750
+Connection ~ 9150 1750
+Wire Wire Line
+	9150 1750 9350 1750
+Wire Wire Line
+	3500 6100 3500 6300
+Text HLabel 3950 6250 2    50   Input ~ 0
+GND
+Wire Wire Line
+	3950 6250 3900 6250
+Wire Wire Line
+	3900 6100 3900 6250
+$EndSCHEMATC

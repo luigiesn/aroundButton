@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PTS636SK25JSMTRLFS
+D Switch Momentary Action SPST NO 250gf SMD 6x3.5x2.5 J-terminals
+F libraries\datasheet\C&K_PTS636_Series.pdf
+$ENDCMP
+#
+#End Doc Library

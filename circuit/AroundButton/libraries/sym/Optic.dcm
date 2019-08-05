@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IN-S66DAT5R5B
+D Red/Blue LED SMD 0606
+F libraries\datasheet\Inolux_IN-S66DAT5R5B.pdf
+$ENDCMP
+#
+#End Doc Library

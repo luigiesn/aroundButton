@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2450AT14A0100
+D 2.4GHz Mini Chip Antenna for 802.11 WiFi WLAN SMD 0.8x1.6mm
+F libraries\datasheet\JohansonTecnology_2450AT14A0100.pdf
+$ENDCMP
+#
+#End Doc Library

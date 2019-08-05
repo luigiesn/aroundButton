@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP W25Q32JVZPIM
+D 32M-bit Serial Flash Dual/Quad SPI WSON-8
+F libraries\datasheet\Winbond_W25Q32JV.pdf
+$ENDCMP
+#
+#End Doc Library

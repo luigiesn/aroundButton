@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLV73333PQDRVRQ1
+D 3.3V 300mA LDO Capacitor-Free SMD WSON-6
+F libraries\datasheet\TexasInstruments_TLV733P-Q1.pdf
+$ENDCMP
+#
+$CMP TPS63000DRCR
+D Buck-boost Converter 1.8A Switches High-Efficiency SMD VSON-10
+F libraries\datasheet\TexasInstruments_TPS6300x.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,46 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# MAKK2520H1R5M
+#
+DEF MAKK2520H1R5M L 0 1 N N 1 F N
+F0 "L" 0 75 50 H V C CNN
+F1 "MAKK2520H1R5M" 0 250 50 H I C CNN
+F2 "fp-lib:IND_2x2.5_MAKK2520H" 25 175 50 H I C CNN
+F3 "" 0 -100 50 H I C CNN
+F4 "1.5uH" 0 -75 40 H V C CNN "Friendly Name"
+F5 "Tayio Yuden" 0 -200 60 H I C CNN "Manufactor"
+F6 "MAKK2520H1R5M" 0 -300 60 H I C CNN "Part Number"
+F7 "1.5uH 78mOhms 20% 2.4A Metal Core Wire-Wound Chip Power Inductor SMD 2.5x2mm" 0 -400 50 H I C CNN "Description"
+DRAW
+A -148 0 48 11 1789 0 1 0 N -101 1 -196 1
+A -51 0 51 11 1789 0 1 0 N -1 1 -102 1
+A 49 0 51 11 1789 0 1 0 N 99 1 -2 1
+A 150 0 50 11 1789 0 1 0 N 199 1 100 1
+X 1 1 -300 0 100 R 50 50 1 1 P
+X 2 2 300 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# NM
+#
+DEF NM L 0 1 N N 1 F N
+F0 "L" 0 75 50 H V C CNN
+F1 "NM" 0 300 50 H I C CNN
+F2 "fp-lib:IND0402_GENERIC" 25 225 50 H I C CNN
+F3 "" 0 -350 50 H I C CNN
+F4 "NM" 0 -75 40 H V C CNN "Friendly Name"
+F5 "-" 0 -450 60 H I C CNN "Manufactor"
+F6 "-" 0 -550 60 H I C CNN "Part Number"
+F7 "Not Mounted Inductor 0402" 25 -250 50 H I C CNN "Description"
+DRAW
+A -148 0 48 11 1789 0 1 0 N -101 1 -196 1
+A -51 0 51 11 1789 0 1 0 N -1 1 -102 1
+A 49 0 51 11 1789 0 1 0 N 99 1 -2 1
+A 150 0 50 11 1789 0 1 0 N 199 1 100 1
+X 1 1 -300 0 100 R 50 50 1 1 P
+X 2 2 300 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

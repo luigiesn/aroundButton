@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 2450AT14A0100
+#
+DEF 2450AT14A0100 A 0 0 N N 1 F N
+F0 "A" 100 50 50 H V L CNN
+F1 "2450AT14A0100" 0 -750 50 H I C CNN
+F2 "fp-lib:CHIP_ANT_2450AT14A0100" 0 450 50 H I C CNN
+F3 "" 0 350 50 H I C CNN
+F4 "Wifi Chip Antenna" 100 -50 40 H V L CNN "Friendly Name"
+F5 "Johanson Technology" 0 -850 50 H I C CNN "Manufactor"
+F6 "2450AT14A0100" 0 450 50 H I C CNN "Part Number"
+F7 "2.4GHz Mini Chip Antenna for 802.11 WiFi WLAN SMD 0.8x1.6mm" 0 -650 50 H I C CNN "Description"
+DRAW
+S -50 -100 50 100 0 1 10 N
+S -15 80 15 30 0 1 0 F
+P 2 0 1 0 0 -100 0 -250 N
+X FEED 1 0 150 50 D 50 50 1 1 P
+X NC 2 0 -300 50 U 50 50 1 1 N N
+ENDDRAW
+ENDDEF
+#
+#End Library

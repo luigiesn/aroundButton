@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BQ21040DBV
+D Single-Input 0.8-A Li-Ion Single Cell Battery Charger SMD SOT-23-6
+F libraries\datasheet\TexasInstruments_BQ21040.pdf
+$ENDCMP
+#
+#End Doc Library

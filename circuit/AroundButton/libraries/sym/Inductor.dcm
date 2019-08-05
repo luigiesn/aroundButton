@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAKK2520H1R5M
+D 1.5uH 78mOhms 20% 2.4A Metal Core Wire-Wound Chip Power Inductor SMD 2.5x2mm
+F libraries\datasheet\TayioYuden_MA-H_Series.pdf
+$ENDCMP
+#
+$CMP NM
+D Not Mounted Inductor 0402
+F -
+$ENDCMP
+#
+#End Doc Library

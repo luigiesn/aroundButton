@@ -1,0 +1,17 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 10118194-0001LF
+D Micro USB B Right Angle Receptacle Connector SMD
+F libraries\datasheet\AmphenolFCI_10118194-0001LF.pdf
+$ENDCMP
+#
+$CMP CONN_01X02_2mm
+D Connector 01x02
+$ENDCMP
+#
+$CMP CONN_04
+D Pad 4 Vias - 4x1mm
+F -
+$ENDCMP
+#
+#End Doc Library

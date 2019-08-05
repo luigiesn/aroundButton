@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GCM155R71E104KE02D
+D 100nF 25V 10% X7R SMD 0402
+F libraries\datasheet\Murata_GCM_Series.pdf
+$ENDCMP
+#
+$CMP GJM1555C1H100FB01D
+D 10pF 50V 1% C0G SMD 0402
+F libraries\datasheet\Murata_GJM_Series.pdf
+$ENDCMP
+#
+$CMP GJM1555C1H3R0BB01D
+D 3pF 50V +/-0.1pF C0G SMD 0402
+F libraries\datasheet\Murata_GJM_Series.pdf
+$ENDCMP
+#
+$CMP GJM1555C1H5R6BB01D
+D 5.6pF 50V +/-0.1pF C0G SMD 0402
+F libraries\datasheet\Murata_GJM_Series.pdf
+$ENDCMP
+#
+$CMP GRM188R60J106KE47D
+D 10uF 6.3V 10% X5R SMD 0603
+F libraries\datasheet\Murata_GRM_Series.pdf
+$ENDCMP
+#
+$CMP GRM188R60J226MEA0D
+D 22uF 6.3V 10% X5R SMD 0603
+F libraries\datasheet\Murata_GRM_Series.pdf
+$ENDCMP
+#
+#End Doc Library

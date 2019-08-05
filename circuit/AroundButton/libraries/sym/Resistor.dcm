@@ -1,0 +1,43 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ERJ-2RKF1000X
+D 100R 1% 0.1W SMD 0402
+F libraries\datasheet\ERJ-xR.pdf
+$ENDCMP
+#
+$CMP ERJ-2RKF1002X
+D 10k 1% 0.1W SMD 0402
+F libraries\datasheet\ERJ-xR.pdf
+$ENDCMP
+#
+$CMP ERJ-2RKF1202X
+D 12k 1% 0.1W SMD 0402
+F libraries\datasheet\ERJ-xR.pdf
+$ENDCMP
+#
+$CMP ERJ-2RKF1203X
+D 120k 1% 0.1W SMD 0402
+F libraries\datasheet\ERJ-xR.pdf
+$ENDCMP
+#
+$CMP ERJ-2RKF2000X
+D 200R 1% 0.1W SMD 0402
+F libraries\datasheet\ERJ-xR.pdf
+$ENDCMP
+#
+$CMP ERJ-2RKF3242X
+D 32.4k 1% 0.1W SMD 0402
+F libraries\datasheet\ERJ-xR.pdf
+$ENDCMP
+#
+$CMP ERJ-2RKF3301X
+D 3.3k 1% 0.1W SMD 0402
+F libraries\datasheet\ERJ-xR.pdf
+$ENDCMP
+#
+$CMP ERJ-2RKF7503X
+D 750k 1% 0.1W SMD 0402
+F libraries\datasheet\ERJ-xR.pdf
+$ENDCMP
+#
+#End Doc Library

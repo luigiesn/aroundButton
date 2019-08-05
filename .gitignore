@@ -1,0 +1,13 @@
+
+*.csv
+*.html
+*.dsn
+*.ses
+*.xml
+*.rules
+*.kicad_pcb-bak
+*.bck
+*.bak
+_autosave-*.kicad_pcb
+circuit/AroundButton/AroundButton-cache.lib
+

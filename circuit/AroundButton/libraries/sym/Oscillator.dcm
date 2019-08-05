@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TSX-322526.0000MF09Z-AC3
+D Crystal 26MHz 10PPM 10PPM/ºC SMD 3.2x2.5mm
+F libraries\datasheet\Epson_TSX3225.pdf
+$ENDCMP
+#
+#End Doc Library

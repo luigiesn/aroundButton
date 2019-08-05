@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRLML2402TRPBF
+D MOSFET N-Channel 20V 250mOhm 1.2A SMD SOT-23
+F libraries\datasheet\IRF_IRLML2402PBF.pdf
+$ENDCMP
+#
+#End Doc Library
