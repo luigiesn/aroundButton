@@ -1,4 +1,4 @@
-(module RES0402_ERJ-xR (layer F.Cu) (tedit 5D479D71)
+(module RES0402_ERJ-xR (layer F.Cu) (tedit 5D48A188)
   (fp_text reference REF** (at 1 0 90) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.1143)))
   )
@@ -13,4 +13,9 @@
   (fp_line (start -0.25 -0.5) (end 0.25 -0.5) (layer F.CrtYd) (width 0.12))
   (pad 2 smd rect (at 0 0.5) (size 0.6 0.5) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at 0 -0.5) (size 0.6 0.5) (layers F.Cu F.Paste F.Mask))
+  (model ${KIPRJMOD}/libraries/3d/RES0402_ERJ-xR.stp
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
 )

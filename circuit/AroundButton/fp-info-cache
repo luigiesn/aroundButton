@@ -1,4 +1,4 @@
-31282878165112
+31300330743876
 fp-lib
 6x3.5x2.5-SWITCH_PTS636SK25JSMTRLFS
 
@@ -81,7 +81,7 @@ QFN32_ESP8266EX
 
 
 0
-36
+33
 33
 fp-lib
 RES0402_ERJ-xR
@@ -92,8 +92,8 @@ RES0402_ERJ-xR
 2
 fp-lib
 SOT23-3_BAT54CLT1G
-Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)
-resistor 0805
+
+
 0
 3
 3

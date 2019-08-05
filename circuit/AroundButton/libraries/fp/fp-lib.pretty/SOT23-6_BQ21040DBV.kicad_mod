@@ -1,4 +1,4 @@
-(module SOT23-6_BQ21040DBV (layer F.Cu) (tedit 5D4785C8)
+(module SOT23-6_BQ21040DBV (layer F.Cu) (tedit 5D489F45)
   (attr smd)
   (fp_text reference REF** (at 0 -2.6) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.1143)))
@@ -31,4 +31,9 @@
     (solder_mask_margin 0.07) (solder_paste_margin -0.07))
   (pad 5 smd roundrect (at 0 -1.3 180) (size 0.6 1.1) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.1)
     (solder_mask_margin 0.07) (solder_paste_margin -0.07))
+  (model ${KIPRJMOD}/libraries/3d/SOT23-6_BQ21040DBV.step
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )

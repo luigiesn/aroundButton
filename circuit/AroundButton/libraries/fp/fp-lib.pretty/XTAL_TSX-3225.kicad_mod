@@ -1,4 +1,4 @@
-(module XTAL_TSX-3225 (layer F.Cu) (tedit 5D4797F4)
+(module XTAL_TSX-3225 (layer F.Cu) (tedit 5D48A80A)
   (fp_text reference REF** (at 0 2.5) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.1143)))
   )
@@ -17,4 +17,9 @@
   (pad 1 smd rect (at -0.8 -1.1) (size 1.15 1.4) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -0.8 1.1) (size 1.15 1.4) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd rect (at 0.8 1.1) (size 1.15 1.4) (layers F.Cu F.Paste F.Mask))
+  (model ${KIPRJMOD}/libraries/3d/XTAL_TSX-3225.STEP
+    (offset (xyz -1.25 1.6 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 90))
+  )
 )
